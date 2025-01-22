@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- لود فایل های استایل مربوط به datePicker -->
+    <link rel="stylesheet" href="persian-datepicker.css" />
+</head>
+
+<body>
+    <input type="text" class="test" />
+    <!-- لود جی کوئری -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"
+        integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- لود فایلهای دیگر این پلاگین -->
+    <script src="persian-date.js"></script>
+    <script src="persian-datepicker.js"></script>
+
+    <script type="text/javascript">
+        $('.test').persianDatepicker({
+            observer: true,
+            format: 'YYYY/MM/DD',
+            altField: '.observer-example-alt'
+        });
+    </script>
+
+</body>
+
+</html>
